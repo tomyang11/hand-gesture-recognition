@@ -1,0 +1,18 @@
+Option 1 - run requirements.txt:
+pip install -r requirements.txt
+
+Option 2 - manual installations:
+pip install mediapipe torch torchvision
+pip install opencv-python
+pip install mediapipe
+pip install protobuf
+pip install --upgrade tensorflow (optional, I just had an error with mine -Tom)
+
+
+Conda installations I had to make (not sure if it'll be necessary for you guys)
+conda install -c anaconda openblas
+conda install pytorch torchvision torchaudio -c pytorch
+
+
+Initialize and update the yolov5 submodule (necessary regardless of option 1 or 2):
+git submodule update --init --recursive
